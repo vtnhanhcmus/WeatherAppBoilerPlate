@@ -1,0 +1,14 @@
+version: '3'
+services:
+
+  weather-db:
+    container_name: weather-mysql
+    image: mysql/mysql-server:5.7
+    environment:
+      MYSQL_DATABASE: weather
+      MYSQL_ROOT_USER: root
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_ROOT_HOST: '%'
+    ports:
+      - "3306:3306"
+    restart: always

@@ -1,0 +1,26 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/weather?useUnicode=true&characterEncoding=UTF-8&characterSetResults=UTF-8
+    username: root
+    password: 123456
+    validationQuery: SELECT 1
+    #initialization-mode: always
+
+  jpa:
+    hibernate:
+      ddl-auto: none
+
+  mvc:
+    view:
+      prefix: /WEB-INF/jsp/
+      suffix: .jsp
+
+
+weather:
+  api:
+    key: 7d7d621b64860ead59cd685c6c58f1f1
+    url: https://api.openweathermap.org/data/2.5/weather?q=%s&appid=7d7d621b64860ead59cd685c6c58f1f1

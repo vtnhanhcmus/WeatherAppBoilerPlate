@@ -1,4 +1,4 @@
-package com.weather.boilerplate.WeatherAppBoilerPlate;
+package com.oddle.app;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
